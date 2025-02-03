@@ -1,0 +1,16 @@
+# AWS CodeGuru Reviewer Configuration File
+version: 1.0
+
+# Suppress specific recommendations
+suppression:
+  - ruleId: "java/unsafe-sql-query"  # Example: Suppresses SQL injection warnings
+  - ruleId: "java/inefficient-loop"  # Example: Suppresses inefficient loop warnings
+
+# Include specific directories for analysis
+include:
+  - src/
+
+# Exclude specific files or directories
+exclude:
+  - test/  # Excludes test files
+  - docs/   # Excludes documentation files
